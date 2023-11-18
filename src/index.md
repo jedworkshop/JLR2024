@@ -1,7 +1,7 @@
 ---
 title: "日本語言語資源の構築と利用性の向上 (JLR2024)"
 layout: base.njk
-description: "言語処理学会第29回年次大会 併設ワークショップ JLR2024"
+description: "言語処理学会第30回年次大会 併設ワークショップ JLR2024"
 ---
 
 <table><tr><td>

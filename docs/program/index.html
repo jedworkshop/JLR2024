@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
+    <link rel="stylesheet" href="/JLR2024/css/base.css?ts=202302210144"><link rel="stylesheet" href="/JLR2024/css/program.css"><link rel="icon" href="/JLR2024/img/icon.svg" type="image/svg+xml">
+
+    <title>JLR2024 プログラム | NLP2024 Workshop on Japanese Language Resources</title>
+
+    <meta property="og:title" content="JLR2024 プログラム" />
+    <meta property="og:site_name" content="Japanese Language Resources Workshop" />
+    <meta property="og:description" content="言語処理学会第29回年次大会 併設ワークショップ JLR2024 - プログラム" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jedworkshop.github.io/JLR2024/img/icon.png">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:alt" content="JLR" />
+    <meta name="twitter:card" content="summary" />
+</head>
+<body>
+    <header><a href="/JLR2024/">NLP2024 Workshop on Japanese Language Resources (JLR2024)</a></header>
+    <main>
+        <div class="subheading">
+            言語処理学会第29回年次大会 併設ワークショップ JLR2024 - プログラム
+        </div>
+        
+<h1>JLR2024 プログラム</h1>
+
+<!--
+<p>2024年3月15日(金) 9:30〜18:00<br/>沖縄コンベンションセンターB1会議室(サテライトA2会議室)＋オンライン中継(Zoom)のハイブリッド開催</p>
+
+<div class="twitter_info">
+<div class="accoutn">公式アカウント<a href="https://twitter.com/jedws" target="_blank" rel="noreferrer">@jedws</a></div>
+</div>
+
+<table id="program_table">
+  <tbody>
+    <tr>
+      <td class="program_time">9:30-9:35</td>
+      <td>オープニング</td>
+    </tr>
+    <tr>
+      <td class="program_time">9:35-10:30</td>
+      <td><a href="#日本語データセットの構築(1)">日本語データセットの構築(1) [一般発表2件]</a></td>
+    </tr>
+    <tr>
+      <td class="program_time">10:40-11:40</td>
+      <td><a href="#日本語データセットの構築(2)">日本語データセットの構築(2) [一般発表2件・LT2件]</a></td>
+    </tr>
+    <tr>
+      <td class="program_time">11:50-13:15</td>
+      <td><a href="#多言語・多分野の言語資源の構築">多言語・多分野の言語資源の構築 [一般発表3件・LT3件]</a></td>
+    </tr>
+    <tr>
+      <td class="program_time">13:15-14:20</td>
+      <td>昼休憩</td>
+    </tr>
+    <tr>
+      <td class="program_time">14:20-15:20</td>
+      <td><a href="#招待講演">招待講演: (山田育矢先生)</a></td>
+    </tr>
+    <tr>
+      <td class="program_time">15:30-17:05</td>
+      <td><a href="#事前学習モデルの構築と利用">事前学習モデルの構築と利用 [一般発表3件・LT3件]</a></td>
+    </tr>
+    <tr>
+      <td class="program_time">17:15-18:00</td>
+      <td><a href="#パネル(総合討論)・クロージング">パネル(総合討論)・クロージング</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+<div class="program_legend">
+  <div>
+    <div class="icons">🎤 一般発表 &nbsp; ⚡ ライトニングトーク &nbsp; 💬 ディスカッション</div>
+    <div class="caveat">(発表時間は当日の進行状況により前後することがあります)</div>
+  </div>
+  <div>
+    <div class="btn_abstract_all" data-target=".abstract" data-action="open">全ての概要を開く</div>
+  </div>
+</div>
+
+
+
+<div class="session" id="日本語データセットの構築(1)">
+    <h2>日本語データセットの構築(1)</br><small>9:35-10:30</small> &nbsp; <small>座長: 浅原正幸 (国語研)</small></h2>
+    
+
+    <div class="talk_list"><div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">9:35-10:05</div>
+                    <div class="title">テキスト読み上げのための読みの曖昧性の分類と読み推定タスクのデータセットの構築</div>
+                    <div class="presenter">新納浩幸 (茨城大), 白井清昭 (JAIST), 古宮嘉那子 (農工大), 柏野和佳子 (国語研)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_a-1">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1JKUdO0XnMz_713EsNqcrpZnz_tvoeWuR" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_a-1">
+                    本研究は2022年10月から国語研の「異分野融合型」共同研究としてスタートしたものである。背景としては、近年、AI アシストなどの普及によりテキストを読み上げる音声合成の技術が期待されていることがある。またこの技術により日本語漢字に自動的にルビを付与することも可能であり、日本語教育ツールにも応用できることもある。本研究の目的は以下の3点である。1点目は読みの曖昧性を持つ語句を収集し分類整理すること（音読み訓読み、序数詞、固有名詞など）。2点目は文脈依存の読みの曖昧性を持つ単語（「辛い」は「つらい」or「からい」など）を対象に、読み推定のタスクのデータセットを構築すること。3点目は通常のテキストから読み上げ用のテキストへの変換システムを作成し、テキスト読み上げシステムを構築すること（all-words WSD or 生成モデル）。これらの実現を3年計画で進行中である。本発表では上記3点に対するアプローチ（模索中、まだアイデアレベル）とその現状を報告する。
+                </div>
+            <div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">10:05-10:30</div>
+                    <div class="title">JGLUEの現在と今後</div>
+                    <div class="presenter">柴田知秀 (ヤフー), 栗原健太郎 (早大), 河原大輔 (早大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_a-2">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1boB_0wTA3JEVKUhl2ckfOfzcth0VACBm" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_a-2">
+                    我々は一般的な日本語理解能力を測ることを目的とし、また、翻訳を介することなく日本語で一から構築することを基本思想として、日本語言語理解ベンチマーク(JGLUE)の構築を行っている。2022年6月にJGLUEを公開し、それ以降、様々なモデルの学習・評価に利用していただいている。本発表では、年次大会の本会議で発表を行った常識推論データセットJCommonsenseQAの拡張を含めたJGLUEの現在と、今後のデータセット構築の予定について紹介する。
+                </div>
+            </div>
+</div>
+
+
+
+<div class="session" id="日本語データセットの構築(2)">
+    <h2>日本語データセットの構築(2)</br><small>10:40-11:40</small> &nbsp; <small>座長: 河原大輔 (早大)</small></h2>
+    
+
+    <div class="talk_list"><div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">10:40-11:05</div>
+                    <div class="title">日本経済新聞記事オープンコーパス：新聞記事コーパスと形態・統語情報アノテーション</div>
+                    <div class="presenter">浅原正幸 (国語研), 高松純子 (日本経済新聞社), 若狭絢 (国語研), 大村舞 (国語研)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_b-1">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1pxyfPkS5s-1xXcubfB1nvHikH8gY_n6c" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_b-1">
+                    本発表では、2023年3月に日本経済新聞社が公開する「日本経済新聞記事オープンコーパス」について紹介する。同データをより有用な言語資源にするために、国立国語研究所により、国語研短単位形態論情報・国語研長単位形態論情報・文節境界・文節係り受けを付与した。さらに Universal Dependencies 形式のデータも準備した。https://nkbb.nikkei.co.jp/alternative/
+                </div>
+            <div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">11:05-11:25</div>
+                    <div class="title">言語学的に妥当なCCGツリーバンク構築に向けて</div>
+                    <div class="presenter">富田朝 (お茶大), 谷中瞳 (東大), 戸次大介 (お茶大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_b-2">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1oM3MRJJpNtqNyVKiO9U42NMYOah6vxMq" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_b-2">
+                    組合せ範疇文法(CCG)のパージングはCCGツリーバンクを学習・評価データにすることが多いため、言語学的に妥当なCCGツリーバンクの構築が必要である。しかし、現行の日本語CCGツリーバンクであるCCGbankでは、受身・使役の構文に対して誤った分析がなされていることが指摘されている。ABC文法のツリーバンクABCTreebankでは、項構造など多くの改善がなされたが、日本語CCGの標準的な統語素性が記述されておらず、統語情報としては不十分である。一方、CCG統語解析器lightblueの出力には標準的な統語素性が与えられているが、項構造に誤りが多いという欠点がある。本研究では、ABCTreebankが持つ利点とlightblueが持つ利点を合わせることで、より言語学的に妥当で詳細な情報を持った日本語ツリーバンクを生成する手法を提案する。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">11:25-11:30</div>
+                    <div class="title">日本語CCGBankは言語学的に妥当か</div>
+                    <div class="presenter">戸次大介 (お茶大), 谷中瞳 (東大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_b-3">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1ldso4XYLa8lgMxe4t6sZHEoLCckyswcr" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_b-3">
+                    日本語CCGBankは、日本語CCGパーザの開発において学習・評価データとして利用されているが、係り受けツリーバンクからの自動変換によって生成されたものであり、その言語的妥当性については改めて検証が必要である。本発表では、日本語CCGBankにおける受身・使役の分析に焦点を当て、それが経験的に誤った予測をもたらすことを示す。本発表は、ツリーバンクを言語学的分析と見做して反証する試みであり、その方法論の例示でもある。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">11:30-11:35</div>
+                    <div class="title">ReazonSpeech: 放送音声から作った大規模日本語音声コーパスと学習済モデル</div>
+                    <div class="presenter">Yin Yue (レアゾンホールディングス)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_b-4">概要</div>
+                
+                
+                    <a href="https://drive.google.com/drive/folders/1_D7ifEInskpiFlfUETm-7_0QaEqBZirZ" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_b-4">
+                    ReazonSpeechは日本語音声認識技術の研究の推進を目的として商用非商用を問わず自由なライセンスで利用可能な大規模オープン日本語音声コーパス。次の３つを公開済 1.日本語音声コーパス（約19000時間） 2.学習済み音声認識モデル 3.コーパス構築ツールキット。既存の非自由なコーパス・モデルに依存しない。CC0の少量データから出発し、ワンセグ録画のパケット解析とブートストラップラベリングを利用することによってハイクオリティの音声認識モデルと大量のラベル付きデータを構築可能になった。
+                </div>
+            <div class="talk panel">
+                <div class="icon panel"></div>
+                <div class="info">
+                    <div class="time">11:35-11:40</div>
+                    <div class="title">ディスカッション</div>
+                    <div class="presenter"></div>
+                </div>
+                
+                    <div class="btn_abstract disabled">概要</div>
+                
+                
+                    <div class="btn_material disabled">資料</div>
+                
+            </div>
+            </div>
+</div>
+
+
+<div class="session" id="多言語・多分野の言語資源の構築">
+    <h2>多言語・多分野の言語資源の構築</br><small>11:50-13:15</small> &nbsp; <small>座長: 柴田知秀 (ヤフー)</small></h2>
+    
+
+    <div class="talk_list"><div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">11:50-12:15</div>
+                    <div class="title">Code Switchingによる多言語混在日本語資源と言語処理</div>
+                    <div class="presenter">砂岡和子 (早大), 譚翠玲 (北大), 向凌萱 (早大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_c-1">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1r6ecP4tmWKW6sNcjkq_Zp-GFjuajspFG" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_c-1">
+                    近年，生活や仕事の場で多言語混在発話が増えている．多言語混在発話とは，日本語の中に他言語が混じる，もしくは他言語に日本語が混じる対話や独話を指す．増加一途の外国人の日本流入に加え，ネット空間のSNS投稿や，逐次通訳および外国語教育の場では，多言語混在がむしろ常態である．対して現行の自動翻訳や音声書き起こしシステムは，単言語ごとにドメインが分かれ，発話やテキストに他言語が混在するや，その処理精度は著しく低下する．ヒトの言語Ｃode-switchingには高度な社会言語学的役割があるが，マシンによる言語処理はそのニーズを満たせていない．本発表では，日本語と中国語の混じる対話を素材に，Notta・DeepL・Google翻訳・訊飛などの音声書き起こしと，テキスト自動翻訳の精度を比較した結果を報告する．その上で，多言語混在資源の言語処理に対する課題と期待について述べる．
+                </div>
+            <div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">12:15-12:35</div>
+                    <div class="title">中日対訳データ言語資源作成の進捗状況</div>
+                    <div class="presenter">宮本華瑠 (阪大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_c-2">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1BMf6ggLCzEwARE5zjfoTP9Buw7f-vxuQ" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_c-2">
+                    今日利用可能な日中対訳コーパスには，北京日本学研究センター(2003)『中日対訳コーパス』のみとなっている．利用制約として，北京日本学研究センターから直接許可を得られた機関に限ってその利用が認められていたが，2021年からは，個人・機関問わず対訳コーパスの入手はできない状況に立っている．即ち，日中対照研究をされている研究者が気軽に利用できるコーパスは今後入手困難な状態であることを意味する．その次に問題となるのは，対訳コーパスに格納されたデータの時限問題である．データの多くは著作権(50年以上)をクリアした作品となり，近年の言語使用実態を反映できるものではない点に改善すべき余地があると考える．そして，中国語原文は『鄧小平文選』『わが父－鄧小平』『毛沢東選集』『全人大報告』など出典の8割に文体的偏りが見られる問題が存在する．以上の諸問題を踏まえ，発表者は2010年から対訳データの収集を始めており，現在雑誌『聞く中国語』2018年～2021年(計48冊)のデータ及び『人民網』ニュース対訳文2014年7月～現在のデータが作成済みとなっていることを報告する内容となる．
+                </div>
+            <div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">12:35-12:55</div>
+                    <div class="title">教育研究の共通知識基盤構築を目指した言語資源の利用</div>
+                    <div class="presenter">武田俊之 (関西学院大学)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_c-3">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1AKU2EuJJJzCTMy4pfs5JQoFgJBKgUl4C" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_c-3">
+                    教育実践の分析・理解・介入において，教育理論の果たす役割は大きい。しかし，教育理論は体系化されているわけではなく、さまざまなパラダイムにおいて提唱された理論が多数存在する。また、近接する理論間でも使用される専門用語が常に同じ概念を指しているわけではなく、用語が一貫した用法で使われていないため，その差異を理解することは容易ではない。このような問題を解決するために、論文等のテキストから概念（概念を測定したデータ変数を含む）とその関係を抽出して、さまざな教育理論の整理をおこない、概念等のタグがついた共通知識基盤構築としての教育研究コーパスの構築を目的とした研究開発をおこなっている。研究開始時とくらべて、日本語の自然言語処理手法やツール、事前学習済みモデルの公開など、言語処理研究の進展は目覚ましいが応用上の課題も多い。この発表では研究開発の目的である教育研究の共通知識基盤について説明した上で、さまざまな自然言語処理研究の適用と、ミスマッチや今後の期待について述べる。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">12:55-13:00</div>
+                    <div class="title">世界一のデジタル国家とされるデンマークの取り組みから見る日本語言語資源構築の公開手法と必要性</div>
+                    <div class="presenter">内藤識 (早大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_c-4">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1e3b9YvvxsbD7x02XLsGULXZ-AzEQAW-o" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_c-4">
+                    本発表では、世界一デジタル化が進んでいるとされるデンマークでの言語資源構築の取り組みや活用事例を紹介する。数年前、デンマークは、国家戦略の一つにデンマーク語資源提供を位置づけた。現在、デジタル化庁サイトで多くのデンマーク語データセットが無料公開されている。この国家戦略で機械翻訳やフェイクニュース対策などあらゆる面で質が向上したとされる。これらを元に、需要があり得る日本語言語資源のドメインを述べる。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">13:00-13:05</div>
+                    <div class="title">難病・希少疾患の症例報告を用いたコーパス作成への道のり</div>
+                    <div class="presenter">土肥栄祐 (国立精神神経医療研究センター), 建石由佳 (科学技術振興機構), 藤原豊史, 山本泰智 (ライフサイエンス統合データベースセンター)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_c-5">概要</div>
+                
+                
+                    <a href="https://drive.google.com/drive/folders/1l623ktyIrqwfNT4RqE1xrMht2EOa2tXy" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_c-5">
+                    難病・希少疾患では、様々な診断支援ツールが開発されている。人工知能と学習データセットの関係と同様に、診断支援ツールの性能や特性は参照データセットに依存する。そのため詳細かつ正確な症例ベースのコーパスが求められる。しかし診療録は個人情報であり共有困難である。日本語症例報告は、PDFで共有、難病・希少疾患の数が不明、共有に学会の許可が必要、診療科ごとに構造化が異なる、医療者の協力が得難い、などのハードルがある。本トークではこれらのハードルを共有する。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">13:05-13:10</div>
+                    <div class="title">意味的アノテーション付き文書が通常業務で作られる社会</div>
+                    <div class="presenter">橋田浩一 (東大・理研)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_c-6">概要</div>
+                
+                
+                    <a href="https://drive.google.com/drive/folders/1RfoH_MCmZDbUeXSzgSlqWIxKvLEyr8SZ" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_c-6">
+                    意味構造を明示するグラフ文書の方がテキスト文書より作成が簡単なこと、グラフ文書を作ることによって批判的思考力が高まることは先行研究でわかっていたが、われわれは、グラフ文書を高校の授業に無理なく導入して生徒の批判的思考力を高められることを示した。教育においてグラフ文書が生徒の知的能力を高めることから、業務においてもグラフ文書が文書処理の効率と勤労者の知的能力を高めて事業成績が向上することは容易に想像できるので、社会全体にグラフ文書が広まると期待できる。
+                </div>
+            <div class="talk panel">
+                <div class="icon panel"></div>
+                <div class="info">
+                    <div class="time">13:10-13:15</div>
+                    <div class="title">ディスカッション</div>
+                    <div class="presenter"></div>
+                </div>
+                
+                    <div class="btn_abstract disabled">概要</div>
+                
+                
+                    <div class="btn_material disabled">資料</div>
+                
+            </div>
+            </div>
+</div>
+
+<div class="session" id="招待講演">
+  <h2>招待講演：知識拡張型言語モデルLUKE<br/><small>14:20-15:20</small> &nbsp; <small>座長: 浅原正幸 (国語研)</small></h2>
+  <div id="keynote">
+    <div id="keynote_speaker">講演者: 山田育矢 先生<small>（<a href="https://www.ousia.jp/ja/">株式会社Studio Ousia</a>, Co-founder, Chief Scientist）</small></div>
+    <div class="keynote_headning">概要</div>
+    <p>LUKEは、単語とエンティティを扱う知識拡張型言語モデルで、エンティティに関する知識が重要となるダウンストリームタスクを良い性能で解くことができる。このモデルはHuggingface Transformersに組み込まれており、簡単に使うことができる。本講演では、LUKE (EMNLP 2020) 、多言語版LUKE (ACL 2022)、LUKEのエンティティリンキングへの応用 (NAACL 2022, EMNLP Findings 2022)、日本語版LUKEまでの取り組みを紹介する。</p>
+    <div class="keynote_headning">講演資料</div>
+    <p><a href="https://speakerdeck.com/ikuyamada/zhi-shi-kuo-zhang-xing-yan-yu-moderuluke">知識拡張型言語モデルLUKE</a></p>
+    <div class="keynote_headning">略歴</div>
+    <p>（株）Studio Ousiaを共同創業し、自然言語処理の技術開発に従事。2000年に（株）ニューロンを起業し、2005年に売却。2007年にStudio Ousiaを設立。博士（学術）。理化学研究所AIP客員研究員。Kaggle Master。</p>
+  </div>
+</div>
+
+
+<div class="session" id="事前学習モデルの構築と利用">
+    <h2>事前学習モデルの構築と利用</br><small>15:30-17:05</small> &nbsp; <small>座長: 久保隆宏 (アマゾンウェブサービスジャパン)</small></h2>
+    
+
+    <div class="talk_list"><div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">15:30-16:00</div>
+                    <div class="title">資源として見る実験プログラム</div>
+                    <div class="presenter">塚越駿 (名大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_d-1">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1Sw8AuTxBgawOGBmqS4lZdmQ0AFfF5oY_" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_d-1">
+                    深層学習を用いた自然言語処理において、言語資源は必要不可欠である。特に、モデルを訓練するための高品質なデータセットや、高性能な事前学習済み言語モデルの研究開発が活発に行われている。では、これらの言語資源があれば十分に研究を遂行できると言えるだろうか。実際には、円滑な研究遂行のために必要な資源はその他にも多く存在し、その中でも実験プログラムは、適切に妥当な実験を行うために欠かすことのできない重要な要素である。しかしその重要性は十分に認識されているとは言えず、高品質な実験プログラムと、その実装方針が共有されることは極めて少ない。本発表では、自然言語処理初学者向けに構築した「BERTによるテキスト分類チュートリアル」を中心に、自然言語処理の研究において実験プログラムが持つ役割と重要性について述べ、実験プログラム管理の方策と、自然言語処理を取り巻く近年の工学的発展について紹介する。
+                </div>
+            <div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">16:00-16:20</div>
+                    <div class="title">日本語BigBirdの構築</div>
+                    <div class="presenter">近藤瑞希, 王昊, 井手竜也, 伊藤俊太朗, Ritvik Choudhary, 栗原健太郎, 河原大輔 (早大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_d-2">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1PgnQHMvxp5lqNZEESAF9LRfGR-ic_i-W" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_d-2">
+                    日本語の言語理解タスクを解くために,  日本語で事前学習されたモデルをファインチューニングすることで性能が向上することが知られている。日本語で事前学習されたモデルはいくつか公開されているが, ほぼすべてのモデルにおいて最大入力長は512トークン以下である。そのため, 日本語では長い入力長のデータに対して, 対応するモデルが存在せず適切な学習を行うことができない。この問題を解決するためにBigBird日本語版の事前学習を行った。BigBirdは最大で4096トークンの長さを扱うことができるEncoderモデルである。学習テキストとして日本語Wikipedia, CC-100, OSCARの3つを, バッチサイズ196, 60万ステップ(約10エポック)を目標として現在20万ステップ程学習した。このモデルを日本語言語理解ベンチマークJGLUEで評価した。また, 複数ノードで学習したときに得られた知見についても報告する。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">16:20-16:25</div>
+                    <div class="title">日本語DistilBERTの構築と性能評価</div>
+                    <div class="presenter">小林滉河, 李聖哲, 中町礼文 (LINE)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_d-3">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1clQD9xy5_WcipMlsvdMUSyYstD8lbHBQ" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_d-3">
+                    近年、BERTやRoBERTaのような大規模言語モデルが自然言語処理におけるデファクトスタンダードになっている。しかし、これらのモデルはパラメーター数が多く、運用コストが高い。この問題を解決するため、軽量なモデルであるDistilBERTを大規模Webコーパスを用いて構築した。本発表では構築についての具体的な内容とJGLUEによる評価について報告する。
+                </div>
+            <div class="talk lt">
+                <div class="icon lt"></div>
+                <div class="info">
+                    <div class="time">16:25-16:30</div>
+                    <div class="title">日本語DeBERTaモデルの構築</div>
+                    <div class="presenter">植田暢大 (京大)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_d-4">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=1r9FxomK-LV7968_Y3lkCSND93v_7q-vC" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_d-4">
+                    本発表では，日本語DeBERTaモデルの事前学習および得られた知見について紹介する．我々は，文字レベルおよび単語レベルの tiny/base/large モデルを構築・公開した．学習には DeepSpeed ライブラリを使用しており，その結果得られた高速化や省メモリ化について種々の設定について比較する．また，マルチノード学習やハイパーパラメータ選択についても述べる．
+                </div>
+            <div class="talk panel">
+                <div class="icon panel"></div>
+                <div class="info">
+                    <div class="time">16:30-16:35</div>
+                    <div class="title">ディスカッション</div>
+                    <div class="presenter"></div>
+                </div>
+                
+                    <div class="btn_abstract disabled">概要</div>
+                
+                
+                    <div class="btn_material disabled">資料</div>
+                
+            </div>
+            <div class="talk normal">
+                <div class="icon normal"></div>
+                <div class="info">
+                    <div class="time">16:35-17:05</div>
+                    <div class="title">日本語事前学習モデルの構築およびビジネス応用の現状</div>
+                    <div class="presenter">佐藤敏紀 (LINE)</div>
+                </div>
+                
+                    <div class="btn_abstract" data-target=".abstract.talk_d-6">概要</div>
+                
+                
+                    <a href="https://drive.google.com/open?id=17Xl2W-yal4xd6sYpZSJsYcUhb69aLInr" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                
+            </div>
+            
+                <div class="abstract talk_d-6">
+                    本発表では、様々な事前学習モデルを構築し応用した経験に基づいて、モデルの仕様と応用結果との関係性に言及し、それぞれのモデルのビジネス方面への活用に関する現在の見解を共有する。また、入力に対する最適解が決まりにくい対話システムの各種コンペティションにおいて、我々の実装が一定の成果をあげることができた要因について見解を紹介する。具体的には、マルチモーダル化や外部知識の参照、倫理フィルター、違法表現の検出、ファクトチェックなど様々な重厚なサブシステムを実装することの重要性について具体例を基にお伝えする。さらに、2023年度中にAPI公開を予定しているHyperCLOVAと著名なモデルとの比較結果についても可能な限り言及する。最後に我々がこれから取り組む事前学習モデルの構築と応用の方向性について言及し、コミュニティ全体の議論を促進したいと考えている。
+                </div>
+            </div>
+</div>
+
+
+<div class="session" id="パネル（総合討論）・クロージング">
+    <h2>パネル（総合討論）・クロージング</br><small>17:15-18:00</small> &nbsp; <small>座長: 河原大輔 (早稲田大)</small></h2>
+    
+        <div class="panelists">
+            <strong>パネリスト:</strong> 久保隆宏 (AWS), 坂口慶祐 (東北大), 柴田知秀 (ヤフー), 松田寛 (Megagon Labs)
+        </div>
+    
+
+    <div class="talk_list"><div class="talk panel">
+                <div class="icon panel"></div>
+                <div class="info">
+                    <div class="time"></div>
+                    <div class="title">事前募集質問についてのディスカッション</div>
+                    <div class="presenter"></div>
+                </div>
+                
+                    <div class="btn_abstract disabled">概要</div>
+                
+                
+                    <div class="btn_material disabled">資料</div>
+                
+            </div>
+            <div class="talk panel">
+                <div class="icon panel"></div>
+                <div class="info">
+                    <div class="time"></div>
+                    <div class="title">総合討論</div>
+                    <div class="presenter"></div>
+                </div>
+                
+                    <div class="btn_abstract disabled">概要</div>
+                
+                
+                    <div class="btn_material disabled">資料</div>
+                
+            </div>
+            <div class="talk panel">
+                <div class="icon panel"></div>
+                <div class="info">
+                    <div class="time"></div>
+                    <div class="title">クロージング</div>
+                    <div class="presenter"></div>
+                </div>
+                
+                    <div class="btn_abstract disabled">概要</div>
+                
+                
+                    <div class="btn_material disabled">資料</div>
+                
+            </div>
+            </div>
+</div>
+
+-->
+
+<p><a href="../">トップに戻る</a><p>
+    </main>
+    <footer><a href="https://github.com/jedworkshop/">Copyright &copy; Japanese Language Resource Workshop. All rights reserved.</a></footer><script src="/JLR2024/js/collapsible.js"></script></body>
+</html>

@@ -8,7 +8,7 @@ description: "言語処理学会第29回年次大会 併設ワークショップ
 <h1>日本語言語資源の構築と利用性の向上</h1>
 <a href="https://www.anlp.jp/nlp2024/">言語処理学会第30回年次大会（NLP2024）</a> 併設ワークショップ
 
-日時：2023年3月15日(金) 全日開催
+日時：2024年3月15日(金) 全日開催
 </td><td style="vertical-align:top;">
   <img src="https://jedworkshop.github.io/JLR2024/img/icon.png" style="width:120px;">  
 </td>
@@ -33,11 +33,11 @@ description: "言語処理学会第29回年次大会 併設ワークショップ
 
 ## スケジュール
 
-- <span class="expired">2023/11/18 (土)　Webサイト公開</span>
-- <span class="expired">2023/12/中旬　　　発表募集要項公開(予定)</span>
-- <span class="expired">2024/02/中旬　　　一般発表申込締切(予定)</span>
-- <span class="expired">2024/02/下旬　　　ライトニングトーク申込締切(予定)</span>
-- <span class="expired">2024/03/15 (金)　ワークショップ当日</span>
+- <span class="expired">2023/11/18 (土)　　Webサイト公開</span>
+- <span class="expired">2023/12/中旬（予定）発表募集要項公開</span>
+- <span class="expired">2024/02/中旬（予定）一般発表申込締切</span>
+- <span class="expired">2024/02/下旬（予定）ライトニングトーク申込締切</span>
+- <span class="expired">2024/03/15 (金)　　ワークショップ当日</span>
 
 ## 発表募集要項
 （詳細準備中）

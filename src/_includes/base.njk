@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.min.css">
+    <link rel="stylesheet" href="{{ '/css/base.css?ts=202302210144' | url }}">
+    {%- if cssfile -%}
+        <link rel="stylesheet" href="{{ ('/css/' + cssfile) | url }}">
+    {%- endif -%}
+    <link rel="icon" href="{{ '/img/icon.svg' | url }}" type="image/svg+xml">
+
+    <title>{{ title }} | NLP2024 Workshop on Japanese Language Resources</title>
+
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:site_name" content="Japanese Language Resources Workshop" />
+    <meta property="og:description" content="{{ description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://jedworkshop.github.io/JLR2024/img/icon.png">
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:alt" content="JLR" />
+    <meta name="twitter:card" content="summary" />
+</head>
+<body>
+    <header><a href="{{ '/' | url }}">NLP2024 Workshop on Japanese Language Resources (JLR2024)</a></header>
+    <main>
+        <div class="subheading">
+            {{ description }}
+        </div>
+        {{ content | safe }}
+    </main>
+    <footer><a href="https://github.com/jedworkshop/">Copyright &copy; Japanese Language Resource Workshop. All rights reserved.</a></footer>
+    {%- if jsfile -%}
+        <script src="{{ ('/js/' + jsfile) | url }}"></script>
+    {%- endif -%}
+</body>
+</html>

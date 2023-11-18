@@ -1,0 +1,29 @@
+{
+  "name": "JLR2024",
+  "version": "1.0.0",
+  "description": "NLP2024 Workshop on Japanese Language Resources",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jedworkshop/JLR2024.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jedworkshop/JLR2024/issues"
+  },
+  "homepage": "https://github.com/jedworkshop/JLR2024",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "modern-normalize": "^1.1.0"
+  },
+  "dependencies": {
+    "markdown-it-anchor": "^8.4.1"
+  }
+}

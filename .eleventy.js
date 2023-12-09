@@ -28,6 +28,6 @@ module.exports = function(eleventyConfig) {
             input: "src",
             output: "docs"
         },
-        pathPrefix: "/JLR2023/"
+        pathPrefix: "/JLR2024/"
     }
 }

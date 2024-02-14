@@ -1,10 +1,15 @@
 <div class="session" id="{{ session_data.title }}">
-    <h2>{{ session_data.title }}</br><small>{{ session_data.time }}</small> &nbsp; <small>座長: {{ session_data.chair }}</small></h2>
+    <h2>{{ session_data.title }}
+    <a class="header-anchor" href="#{{ session_data.header or session_data.title }}">
+        <span class="heading-anchor" aria-hidden="true">¶</span>
+    </a>
+    </br><small>{{ session_data.time }}</small> &nbsp; <small>座長: {{ session_data.chair }}</small></h2>
     {% if session_data.panelists %}
         <div class="panelists">
             <strong>パネリスト:</strong> {{ session_data.panelists }}
         </div>
     {% endif %}
+
 
     <div class="talk_list">
         {%- for talk in session_data.talks -%}

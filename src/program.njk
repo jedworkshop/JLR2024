@@ -29,24 +29,14 @@ index: false
   </div>
 </div>
 
+{% for key, session in sessions | sortDataByTime %}
 
-{% set session_data = sessions.session_1 %}
-{% include "session.njk" %}
+{%- if session.has_detail -%}
+  {% set session_data = session %}
+  {% include "session.njk" %}
+{%- endif -%}
 
-{% set session_data = sessions.session_2 %}
-{% include "session.njk" %}
-
-{% set session_data = sessions.session_3 %}
-{% include "session.njk" %}
-
-{% set session_data = sessions.invited %}
-{% include "invited.njk" %}
-
-{% set session_data = sessions.session_4 %}
-{% include "session.njk" %}
-
-{% set session_data = sessions.session_5 %}
-{% include "session.njk" %}
+{% endfor %}
 
 
 <p><a href="../">トップに戻る</a><p>

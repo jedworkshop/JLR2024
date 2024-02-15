@@ -4,11 +4,11 @@
   <div class="flex-row">
     <div class="program_time flex-item">{{ session.time }}</div>
     <div class="flex-item">
-        {%- if not session.nolink -%}
+        {%- if session.has_detail -%}
           <a href="{%- if index -%}program{%- endif -%}#{{ session.header or session.title }}">
         {%- endif -%}
         {{ session.timeheader or session.title }} {{ session | countSession }}
-        {%- if not session.nolink -%}
+        {%- if session.has_detail -%}
           </a>
         {%- endif -%}
     </div>

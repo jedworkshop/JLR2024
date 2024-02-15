@@ -3,6 +3,7 @@
     "title": "パネル（総合討論）・クロージング",
     "chair": "河原大輔 (早稲田大)",
     "panelists": "久保隆宏 (AWS), 坂口慶祐 (東北大), 柴田知秀 (ヤフー), 松田寛 (Megagon Labs)",
+    "has_detail": true,
     "talks": [
       {
         "id": "f-1",

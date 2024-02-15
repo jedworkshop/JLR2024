@@ -1,16 +1,32 @@
-<div class="session" id="{{ session_data.title }}">
+<div class="session" id="{{ session_data.header or session_data.title }}">
     <h2>{{ session_data.title }}
     <a class="header-anchor" href="#{{ session_data.header or session_data.title }}">
         <span class="heading-anchor" aria-hidden="true">¶</span>
     </a>
-    </br><small>{{ session_data.time }}</small> &nbsp; <small>座長: {{ session_data.chair }}</small></h2>
-    {% if session_data.panelists %}
+    {%- if not index -%}</br><small>{{ session_data.time }}</small> &nbsp; <small>座長: {{ session_data.chair }}</small>{%- endif -%}
+    </h2>
+
+    {%- if session_data.panelists -%}
         <div class="panelists">
             <strong>パネリスト:</strong> {{ session_data.panelists }}
         </div>
-    {% endif %}
+    {%- endif -%}
 
+    {%- if session_data.presenter -%}
+        <div id="keynote">
+            <div id="keynote_speaker">講演者: {{ session_data.presenter }} 先生<small>{{ session_data.affiliation | safe }}</small></div>
+            <div class="keynote_headning">概要</div>
+            <p>{{ session_data.abstract }}</p>
+            <div class="keynote_headning">講演資料</div>
+            <p>{%- if session_data.material.url -%}<a href="{{ session_data.material.url }}">{%- endif -%}
+                {{ session_data.material.name }}
+                {%- if session_data.material.url -%}</a>{%- endif -%}</p>
+            <div class="keynote_headning">略歴</div>
+            <p>{{ session_data.biography }}</p>
+        </div>
+    {%- endif -%}
 
+    {%- if session_data.talks.length > 0 -%}
     <div class="talk_list">
         {%- for talk in session_data.talks -%}
             <div class="talk {{ talk.type }}">
@@ -38,4 +54,8 @@
             {% endif %}
     {%- endfor -%}
     </div>
+    {%- endif -%}
+
 </div>
+
+

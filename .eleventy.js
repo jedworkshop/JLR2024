@@ -36,12 +36,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter("countSession", (obj) => {
         if ( obj.panelists || obj.talks.length == 0 ) { return ""; }
         var count = {"lt": 0, "normal": 0};
-        obj.talks.forEach((talk) => {
-            count[talk.type] += 1;
-        });
+        obj.talks.forEach((talk) => { count[talk.type] += 1; });
         return "[" + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") + "]";
     });
-    eleventyConfig.addFilter("html", (obj) => { console.log(obj); return obj });
 
     return {
         dir: {

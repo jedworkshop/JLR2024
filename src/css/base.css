@@ -171,11 +171,14 @@ main h3:hover .heading-anchor {
 .invite {
     margin-top: 0px;
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 1.1em;
+    border-bottom: 1px solid;
 }
 .invite h3 {
+    margin-top: 1em;
     font-size: 1.1em;
+    border-bottom: 1px solid;
 }
 
 /* プログラムテーブル */

@@ -7,7 +7,7 @@
         {%- if session.has_detail -%}
           <a href="{%- if index -%}program{%- endif -%}#{{ session.header or session.title }}">
         {%- endif -%}
-        {{ session.timeheader or session.title }} {{ session | countSession }}
+        {{ session.timeheader or session.title }}
         {%- if session.has_detail -%}
           </a>
         {%- endif -%}

@@ -1,0 +1,33 @@
+
+<div class="invite">
+
+    {%- if index -%}
+    <h2 id="{{ talk.header or talk.title }}">
+        招待講演：{{ talk.title }}
+    {%- if not index -%}</br><small>{{ talk.time }}</small>{%- endif -%}
+    <a class="header-anchor" href="#{{ talk.header or talk.title }}"><span class="heading-anchor" aria-hidden="true">¶</span></a>
+    </h2>
+    {% else %}
+    <h3 id="{{ talk.header or talk.title }}">
+        招待講演：</br>{{ talk.title }}
+    </br><small>{{ talk.time }}</small>
+    <a class="header-anchor" href="#{{ talk.header or talk.title }}"><span class="heading-anchor" aria-hidden="true">¶</span></a>
+    </h3>
+    {%- endif -%}
+
+    <div id="keynote">
+        <div id="keynote_speaker">講演者: {{ talk.presenter }} 先生<small>{{ talk.affiliation | safe }}</small></div>
+        <div class="keynote_headning">概要</div>
+        <p>{{ talk.abstract }}</p>
+        <div class="keynote_headning">講演資料</div>
+        <p>{%- if talk.material.url -%}<a href="{{ talk.material.url }}">{%- endif -%}
+            {{ talk.material.name }}
+            {%- if talk.material.url -%}</a>{%- endif -%}</p>
+        <div class="keynote_headning">略歴</div>
+        <p>{{ talk.biography }}</p>
+    </div>
+
+</div>
+
+
+

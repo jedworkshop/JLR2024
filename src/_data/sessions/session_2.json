@@ -1,50 +1,35 @@
 {
-  "time": "10:40-11:40",
-  "title": "日本語データセットの構築(2)",
-  "chair": "河原大輔 (早大)",
+  "time": "11:10-12:30",
+  "title": "午前＜２＞",
+  "chair": "松田 寛 (Megagon Labs)",
   "has_detail": true,
   "talks": [
     {
       "id": "b-1",
       "type": "normal",
-      "time": "10:40-11:05",
-      "title": "日本経済新聞記事オープンコーパス：新聞記事コーパスと形態・統語情報アノテーション",
-      "presenter": "浅原正幸 (国語研), 高松純子 (日本経済新聞社), 若狭絢 (国語研), 大村舞 (国語研)",
-      "material": "https://drive.google.com/open?id=1pxyfPkS5s-1xXcubfB1nvHikH8gY_n6c",
-      "abstract": "本発表では、2023年3月に日本経済新聞社が公開する「日本経済新聞記事オープンコーパス」について紹介する。同データをより有用な言語資源にするために、国立国語研究所により、国語研短単位形態論情報・国語研長単位形態論情報・文節境界・文節係り受けを付与した。さらに Universal Dependencies 形式のデータも準備した。https://nkbb.nikkei.co.jp/alternative/"
+      "time": "11:10-11:35",
+      "title": "質問回答データセットを用いたPrompt TuningからFine Tuningへの移行時期推定",
+      "presenter": "久保 隆宏 (アマゾンウェブサービスジャパン),呉 和仁 (アマゾンウェブサービスジャパン),前川 泰毅 (アマゾンウェブサービスジャパン)",
+      "material": null,
+      "abstract": "企業で生成 AI をサービスに組み込む場合、 ChatGPT や Claude といった高精度かつ API 経由で利用できる基盤モデルがしばしば選択される。この場合、顧客の望む応答をするようカスタマイズするには Prompt Tuning が主な手段となる。しかし、サービスの提供が継続しデータが蓄積されるにつれ、1 枚の GPU に乗る数十億程度のオープンソースのモデルを Fine Tuning (Instruction Tuning) することで同等の精度より安価に実現できる可能性が高まる。本発表では、質問回答のデータセットである JSQuAD を用いて Few-shot を用いた Prompt Tuning よりも Fine Tuning のほうが高精度、また安価になる移行点の存在と必要なデータ量を検証する。これによりオープンソースモデルの産業応用を企図する方が必要なデータ量を見積もる目安を提供する。"
     },
     {
       "id": "b-2",
       "type": "normal",
-      "time": "11:05-11:25",
-      "title": "言語学的に妥当なCCGツリーバンク構築に向けて",
-      "presenter": "富田朝 (お茶大), 谷中瞳 (東大), 戸次大介 (お茶大)",
-      "material": "https://drive.google.com/open?id=1oM3MRJJpNtqNyVKiO9U42NMYOah6vxMq",
-      "abstract": "組合せ範疇文法(CCG)のパージングはCCGツリーバンクを学習・評価データにすることが多いため、言語学的に妥当なCCGツリーバンクの構築が必要である。しかし、現行の日本語CCGツリーバンクであるCCGbankでは、受身・使役の構文に対して誤った分析がなされていることが指摘されている。ABC文法のツリーバンクABCTreebankでは、項構造など多くの改善がなされたが、日本語CCGの標準的な統語素性が記述されておらず、統語情報としては不十分である。一方、CCG統語解析器lightblueの出力には標準的な統語素性が与えられているが、項構造に誤りが多いという欠点がある。本研究では、ABCTreebankが持つ利点とlightblueが持つ利点を合わせることで、より言語学的に妥当で詳細な情報を持った日本語ツリーバンクを生成する手法を提案する。"
+      "time": "11:35-12:05",
+      "title": "Data processing for Japanese text-to-pron models",
+      "presenter": "Gleb Mazovetskiy (Google), Taku Kudo (Google)",
+      "material": null,
+      "abstract": "Japanese text-to-pronunciation modelling is a notoriously data-intensive problem. Japanese data sources are often only partially annotated, and use different annotation standards for pronunciation and word segmentation. This talk introduces a set of techniques that enable ingesting data that may be partially annotated, use arbitrary word segmentations, and use a variety of pronunciation annotation standards. These techniques have been used at Google since 2020 for text-to-speech and other tasks."
     },
     {
       "id": "b-3",
-      "type": "lt",
-      "time": "11:25-11:30",
-      "title": "日本語CCGBankは言語学的に妥当か",
-      "presenter": "戸次大介 (お茶大), 谷中瞳 (東大)",
-      "material": "https://drive.google.com/open?id=1ldso4XYLa8lgMxe4t6sZHEoLCckyswcr",
-      "abstract": "日本語CCGBankは、日本語CCGパーザの開発において学習・評価データとして利用されているが、係り受けツリーバンクからの自動変換によって生成されたものであり、その言語的妥当性については改めて検証が必要である。本発表では、日本語CCGBankにおける受身・使役の分析に焦点を当て、それが経験的に誤った予測をもたらすことを示す。本発表は、ツリーバンクを言語学的分析と見做して反証する試みであり、その方法論の例示でもある。"
-    },
-    {
-      "id": "b-4",
-      "type": "lt",
-      "time": "11:30-11:35",
-      "title": "ReazonSpeech: 放送音声から作った大規模日本語音声コーパスと学習済モデル",
-      "presenter": "Yin Yue (レアゾンホールディングス)",
-      "material": "https://drive.google.com/drive/folders/1_D7ifEInskpiFlfUETm-7_0QaEqBZirZ",
-      "abstract": "ReazonSpeechは日本語音声認識技術の研究の推進を目的として商用非商用を問わず自由なライセンスで利用可能な大規模オープン日本語音声コーパス。次の３つを公開済 1.日本語音声コーパス（約19000時間） 2.学習済み音声認識モデル 3.コーパス構築ツールキット。既存の非自由なコーパス・モデルに依存しない。CC0の少量データから出発し、ワンセグ録画のパケット解析とブートストラップラベリングを利用することによってハイクオリティの音声認識モデルと大量のラベル付きデータを構築可能になった。"
-    },
-    {
-      "id": "b-5",
-      "type": "panel",
-      "time": "11:35-11:40",
-      "title": "ディスカッション"
+      "type": "normal",
+      "time": "12:05-12:30",
+      "title": "日本語埋め込みモデル評価ベンチマークの構築",
+      "presenter": "Shengzhe Li (SB Intuitions), 大萩 雅也 (SB Intuitions), 李 凌寒 (SB Intuitions)",
+      "material": null,
+      "abstract": "本発表では，日本語埋め込みモデルを評価用に構築した新たなベンチマーク，JMTEB (Japanese Massive Text Embedding Benchmark) を紹介する。埋め込みモデルは，類似文検出，クラスタリング，情報検索など幅広く応用でき，様々な応用先を見据えた多面的な性能評価が必要となる。英語においては，MTEBという埋め込みモデルの評価ベンチマークが存在しているが，日本語では，そのような統一された評価ベンチマークはまだ確立されていないため，モデルの性能分析，及びモデル間の比較が困難である。本発表では，公開データセットを広範に収集し，日本語埋め込みモデルの評価ベンチマークJMTEBを構築した。JMTEBは現在，できるだけ多面的に評価を行うため，五つの異なるタスクをカバーしており，それぞれのタスクには異なるドメインのデータセットが複数含まれている。また，全てのデータセット，及び再現性と利便性に配慮した評価スクリプトを公開する。本評価基盤が，性能の高い日本語埋め込みモデルの構築の促進に資することを期待している。"
     }
   ]
 }

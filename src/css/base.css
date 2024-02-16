@@ -155,8 +155,8 @@ main h3:hover .heading-anchor {
 
 /* 特別講演 */
 #keynote #keynote_speaker {
-    margin-top: 1.6em;
-    font-size: 1.25em;
+    margin-top: 1.0em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 #keynote .keynote_headning {
@@ -168,7 +168,15 @@ main h3:hover .heading-anchor {
 #keynote p {
     margin: 0;
 }
-
+.invite {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    font-size: 1.1em;
+}
+.invite h3 {
+    font-size: 1.1em;
+}
 
 /* プログラムテーブル */
 #program_table {

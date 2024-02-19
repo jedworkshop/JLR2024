@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("./src/materials");
 
 
-    const markdownLib = markdownIt({html: true, highlight: function (str, lang) {return ''}}).use(markdownItAnchor, {
+    const markdownLib = markdownIt({html: true}).use(markdownItAnchor, {
         permalink: markdownItAnchor.permalink.linkInsideHeader({
             symbol: '<span class="heading-anchor" aria-hidden="true">¶</span>',
             placement: 'after'
@@ -25,11 +25,10 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter("sortDataByTime", (obj) => {
         const sorted = {};
-        Object.keys(obj)
-          .sort((a, b) => {
+        Object.keys(obj).sort((a, b) => {
                 let atime = obj[a].time.split("-")[0].split(":").map(Number)
                 let btime = obj[b].time.split("-")[0].split(":").map(Number)
-                return new Date(2024, 2, 15, atime[0], atime[1], 0) > new Date(2024, 2, 15, btime[0], btime[1], 0) ? 1 : -1;
+                return new Date(2024, 3, 15, atime[0], atime[1], 0) > new Date(2024, 3, 15, btime[0], btime[1], 0) ? 1 : -1;
            }).forEach((name) => (sorted[name] = obj[name]));
         return sorted;
     });

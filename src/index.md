@@ -130,7 +130,6 @@ index: true
 
 ### 発表申込フォーム
 
-※発表申込は締め切りました。
 [JLR2024発表申込フォーム](https://forms.gle/MLS2nmuGMdnYkqcG7)
 
 ## 参加申込

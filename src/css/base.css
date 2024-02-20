@@ -155,8 +155,8 @@ main h3:hover .heading-anchor {
 
 /* 特別講演 */
 #keynote #keynote_speaker {
-    margin-top: 1.6em;
-    font-size: 1.25em;
+    margin-top: 1.0em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 #keynote .keynote_headning {
@@ -168,34 +168,49 @@ main h3:hover .heading-anchor {
 #keynote p {
     margin: 0;
 }
-
+.invite {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+    border-bottom: 1px solid;
+}
+.invite h3 {
+    margin-top: 1em;
+    font-size: 1.1em;
+    border-bottom: 1px solid;
+}
 
 /* プログラムテーブル */
-table#program_table {
+#program_table {
     width: 100%;
     border-collapse: collapse;
     margin: 2em 0;
 }
-#program_table tr {
+#program_table .flex-item:nth-child(2) {
+    flex: 2;
+}
+#program_table .flex-row {
+    display: flex;
     border-bottom: 1px solid rgba(31,31,31,.25);
 }
-#program_table tr:last-child {
+#program_table .flex-row:last-child {
     border-bottom: 0;
 }
-#program_table tr:hover {
+#program_table .flex-row:hover {
     background-color: rgba(31,31,31,.1);
 }
-#program_table td {
+#program_table .flex-item {
     padding: 1em .5em;
 }
-#program_table td.program_time {
+#program_table .flex-item.program_time {
     text-align: left;
     width: 15%;
 }
-#program_table td a {
+#program_table .flex-item a {
     text-decoration: none;
 }
-#program_table td a:hover {
+#program_table .flex-item a:hover {
     text-decoration: underline;
 }
 

@@ -1,36 +1,70 @@
-<div class="session" id="{{ session_data.title }}">
-    <h2>{{ session_data.title }}</br><small>{{ session_data.time }}</small> &nbsp; <small>座長: {{ session_data.chair }}</small></h2>
-    {% if session_data.panelists %}
+<div class="session" id="{{ session_data.header or session_data.title }}">
+    <h2>{{ session_data.title }}
+    <a class="header-anchor" href="#{{ session_data.header or session_data.title }}">
+        <span class="heading-anchor" aria-hidden="true">¶</span>
+    </a>
+    </br><small>{{ session_data.time }}</small> {%- if not index -%} &nbsp; <small>座長: {{ session_data.chair }}</small>{%- endif -%}
+    </h2>
+
+    {%- if session_data.panelists -%}
         <div class="panelists">
             <strong>パネリスト:</strong> {{ session_data.panelists }}
         </div>
-    {% endif %}
+    {%- endif -%}
+
+    {%- if session_data.presenter -%}
+        <div id="keynote">
+            <div id="keynote_speaker">講演者: {{ session_data.presenter }} 先生<small>{{ session_data.affiliation | safe }}</small></div>
+            <div class="keynote_headning">概要</div>
+            <p>{{ session_data.abstract }}</p>
+            <div class="keynote_headning">講演資料</div>
+            <p>{%- if session_data.material.url -%}<a href="{{ session_data.material.url }}">{%- endif -%}
+                {{ session_data.material.name }}
+                {%- if session_data.material.url -%}</a>{%- endif -%}</p>
+            <div class="keynote_headning">略歴</div>
+            <p>{{ session_data.biography }}</p>
+        </div>
+    {%- endif -%}
+
+    {%- if session_data.talks.length > 0 -%}
 
     <div class="talk_list">
         {%- for talk in session_data.talks -%}
-            <div class="talk {{ talk.type }}">
-                <div class="icon {{ talk.type }}"></div>
-                <div class="info">
-                    <div class="time">{{ talk.time }}</div>
-                    <div class="title">{{ talk.title }}</div>
-                    <div class="presenter">{{ talk.presenter }}</div>
+
+            {%- if talk.type == "invite" -%}
+                {%- include "invite.njk" -%}
+            {%- else -%}
+
+                <div class="talk {{ talk.type }}">
+                    <div class="icon {{ talk.type }}"></div>
+                    <div class="info">
+                        <div class="time">{{ talk.time }}</div>
+                        <div class="title">{{ talk.title }}</div>
+                        <div class="presenter">{{ talk.presenter }}</div>
+                    </div>
+                    {% if talk.abstract %}
+                        <div class="btn_abstract" data-target=".abstract.talk_{{ talk.id }}">概要</div>
+                    {% else %}
+                        <div class="btn_abstract disabled">概要</div>
+                    {% endif %}
+                    {% if talk.material %}
+                        <a href="{{ talk.material | url }}" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                    {% else %}
+                        <div class="btn_material disabled">資料</div>
+                    {% endif %}
                 </div>
                 {% if talk.abstract %}
-                    <div class="btn_abstract" data-target=".abstract.talk_{{ talk.id }}">概要</div>
-                {% else %}
-                    <div class="btn_abstract disabled">概要</div>
+                    <div class="abstract talk_{{ talk.id }}">
+                        {{ talk.abstract | safe }}
+                    </div>
                 {% endif %}
-                {% if talk.material %}
-                    <a href="{{ talk.material | url }}" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
-                {% else %}
-                    <div class="btn_material disabled">資料</div>
-                {% endif %}
-            </div>
-            {% if talk.abstract %}
-                <div class="abstract talk_{{ talk.id }}">
-                    {{ talk.abstract | safe }}
-                </div>
-            {% endif %}
-    {%- endfor -%}
+
+            {%- endif -%}
+
+        {%- endfor -%}
     </div>
+    {%- endif -%}
+
 </div>
+
+

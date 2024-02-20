@@ -1,0 +1,35 @@
+{
+  "time": "11:10-12:30",
+  "title": "午前＜２＞",
+  "chair": "松田 寛 (Megagon Labs)",
+  "has_detail": true,
+  "talks": [
+    {
+      "id": "b-1",
+      "type": "normal",
+      "time": "11:10-11:35",
+      "title": "質問回答データセットを用いたPrompt TuningからFine Tuningへの移行時期推定",
+      "presenter": "久保 隆宏 (アマゾンウェブサービスジャパン),呉 和仁 (アマゾンウェブサービスジャパン),前川 泰毅 (アマゾンウェブサービスジャパン)",
+      "material": null,
+      "abstract": "企業で生成 AI をサービスに組み込む場合、 ChatGPT や Claude といった高精度かつ API 経由で利用できる基盤モデルがしばしば選択される。この場合、顧客の望む応答をするようカスタマイズするには Prompt Tuning が主な手段となる。しかし、サービスの提供が継続しデータが蓄積されるにつれ、1 枚の GPU に乗る数十億程度のオープンソースのモデルを Fine Tuning (Instruction Tuning) することで同等の精度より安価に実現できる可能性が高まる。本発表では、質問回答のデータセットである JSQuAD を用いて Few-shot を用いた Prompt Tuning よりも Fine Tuning のほうが高精度、また安価になる移行点の存在と必要なデータ量を検証する。これによりオープンソースモデルの産業応用を企図する方が必要なデータ量を見積もる目安を提供する。"
+    },
+    {
+      "id": "b-2",
+      "type": "normal",
+      "time": "11:35-12:05",
+      "title": "Data processing for Japanese text-to-pron models",
+      "presenter": "Gleb Mazovetskiy (Google), Taku Kudo (Google)",
+      "material": null,
+      "abstract": "Japanese text-to-pronunciation modelling is a notoriously data-intensive problem. Japanese data sources are often only partially annotated, and use different annotation standards for pronunciation and word segmentation. This talk introduces a set of techniques that enable ingesting data that may be partially annotated, use arbitrary word segmentations, and use a variety of pronunciation annotation standards. These techniques have been used at Google since 2020 for text-to-speech and other tasks."
+    },
+    {
+      "id": "b-3",
+      "type": "normal",
+      "time": "12:05-12:30",
+      "title": "日本語埋め込みモデル評価ベンチマークの構築",
+      "presenter": "Shengzhe Li (SB Intuitions), 大萩 雅也 (SB Intuitions), 李 凌寒 (SB Intuitions)",
+      "material": null,
+      "abstract": "本発表では，日本語埋め込みモデルを評価用に構築した新たなベンチマーク，JMTEB (Japanese Massive Text Embedding Benchmark) を紹介する。埋め込みモデルは，類似文検出，クラスタリング，情報検索など幅広く応用でき，様々な応用先を見据えた多面的な性能評価が必要となる。英語においては，MTEBという埋め込みモデルの評価ベンチマークが存在しているが，日本語では，そのような統一された評価ベンチマークはまだ確立されていないため，モデルの性能分析，及びモデル間の比較が困難である。本発表では，公開データセットを広範に収集し，日本語埋め込みモデルの評価ベンチマークJMTEBを構築した。JMTEBは現在，できるだけ多面的に評価を行うため，五つの異なるタスクをカバーしており，それぞれのタスクには異なるドメインのデータセットが複数含まれている。また，全てのデータセット，及び再現性と利便性に配慮した評価スクリプトを公開する。本評価基盤が，性能の高い日本語埋め込みモデルの構築の促進に資することを期待している。"
+    }
+  ]
+}

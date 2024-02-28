@@ -87,7 +87,7 @@
 
 <div class="program_legend">
   <div>
-    <div class="icons">🎤 一般発表 &nbsp; ⚡ ライトニングトーク </div>
+    <div class="icons">🎤 一般発表 &nbsp; ⚡ ライトニングトーク &nbsp; 💻 オンライン発表</div>
     <div class="caveat">(発表時間は当日の進行状況により前後することがあります)</div>
   </div>
   <div>
@@ -219,7 +219,7 @@
                     <div class="info">
                         <div class="time">13:30-13:55</div>
                         <div class="title">情動的知能資源としてのリアクション絵文字</div>
-                        <div class="presenter">砂岡 和子 (早大)</div>
+                        <div class="presenter">砂岡 和子 (早大)  💻 </div>
                     </div>
                     
                         <div class="btn_abstract" data-target=".abstract.talk_c-1">概要</div>
@@ -331,12 +331,12 @@
                     <div class="abstract talk_d-2">
                         農研機構では、内閣府「研究開発と Society 5.0 との橋渡しプログラム（BRIDGE）」の施策の一つである農林水産省実施施策「AI 農業社会実装プロジェクト」において、農業指導技術者・普及者の減少を補うためのAI 技術の確立を目指している。本プロジェクトでは、普及員指導員による営農支援を補助するために、農業ドメインのドキュメントを収集、知識モデルを構築し、それらを用いて大規模言語モデルを構築する。本LTでは、この取り組みについて紹介する。
                     </div>
-                <div class="talk normal">
-                    <div class="icon normal"></div>
+                <div class="talk lt">
+                    <div class="icon lt"></div>
                     <div class="info">
-                        <div class="time">15:25-15:55</div>
-                        <div class="title">LLM学習用QAデータセットの自動構築手法の提案</div>
-                        <div class="presenter">飯塚 康太 (フィックスターズ)</div>
+                        <div class="time">15:25-15:30</div>
+                        <div class="title">闘病記ブログから患者の医療イベントをインクリメンタルに要約したデータセット</div>
+                        <div class="presenter">矢田 竣太郎 (NAIST), 荒牧 英治 (NAIST)</div>
                     </div>
                     
                         <div class="btn_abstract" data-target=".abstract.talk_d-3">概要</div>
@@ -347,14 +347,14 @@
                 </div>
                 
                     <div class="abstract talk_d-3">
-                        ドメイン知識を獲得したLLMを構築するための手法の一つとしてファインチューニングがある。ファインチューニングで有用なモデルを構築するには高品質なデータセットを利用することが重要だが、良いデータセットを人力で作るには多大な手間がかかる。この問題を解決するため、本研究では、LLM を活用したデータセット構築の自動化パイプラインを実装した。これを利用して実際に、プログラミング言語のリファレンス文書を入力として自動的に質問回答のデータセットが作成できることを確認した。さらに、モデル・プロンプト・温度パラメータによる出力データセットの違いを点数付けして評価した。これらの実験結果から、 LLM を利用してデータセットを構築する際には、単にリーダーボード上で評価が高いモデルを使うだけではなくプロンプトなど設定を変えて評価すべきであることを確認した。本発表では、パイプラインの実装と生成データセットの評価の詳細について報告する。
+                        闘病記ブログに執筆された患者の医学的経過を，手術や投薬等の医療イベント単位で箇条書きに要約するタスクのためにデータセットを構築した．ユーザごとに，ブログの各記事に対し，それ以前の全記事からわかる医療イベント要約を付与しており，個別記事中の医療イベントだけでなく執筆時点で最新の患者経過がわかるのが特徴である．この形式を活用してモデルを訓練すれば，履歴や記憶を重視させることができるのではと考えており，紹介を兼ねてご意見を伺いたい．
                     </div>
                 <div class="talk normal">
                     <div class="icon normal"></div>
                     <div class="info">
-                        <div class="time">15:55-16:25</div>
-                        <div class="title">対話の楽しさの評価に向けた日本語応答生成ベンチマークの構築</div>
-                        <div class="presenter">水上 雅博 (NTT), 杉山 弘晃 (NTT)</div>
+                        <div class="time">15:30-15:55</div>
+                        <div class="title">LLM学習用QAデータセットの自動構築手法の提案</div>
+                        <div class="presenter">飯塚 康太 (フィックスターズ), 吉藤 尚生 (フィックスターズ)</div>
                     </div>
                     
                         <div class="btn_abstract" data-target=".abstract.talk_d-4">概要</div>
@@ -365,14 +365,14 @@
                 </div>
                 
                     <div class="abstract talk_d-4">
-                        近年のLLMの発展に伴い，さまざまな場面でLLMが活用されている．その活用先の一つに対話システムがある．LLMを用いた対話システムとしては，タスク対話やQAを行うAIアシスタントが主流であるが，対話を通して楽しさを提供する雑談対話システムの需要もある．一方で，LLMの評価において，ほとんどのベンチマークが客観性・事実性・簡潔性を評価しており，雑談対話の楽しさを評価する枠組みは知られていない．そこで，本研究では，対話の楽しさを評価するためのベンチマークを提案し，現在利用可能なLLMを評価した結果を報告する．
+                        ドメイン知識を獲得したLLMを構築するための手法の一つとしてファインチューニングがある。ファインチューニングで有用なモデルを構築するには高品質なデータセットを利用することが重要だが、良いデータセットを人力で作るには多大な手間がかかる。この問題を解決するため、本研究では、LLM を活用したデータセット構築の自動化パイプラインを実装した。これを利用して実際に、プログラミング言語のリファレンス文書を入力として自動的に質問回答のデータセットが作成できることを確認した。さらに、モデル・プロンプト・温度パラメータによる出力データセットの違いを点数付けして評価した。これらの実験結果から、 LLM を利用してデータセットを構築する際には、単にリーダーボード上で評価が高いモデルを使うだけではなくプロンプトなど設定を変えて評価すべきであることを確認した。本発表では、パイプラインの実装と生成データセットの評価の詳細について報告する。
                     </div>
                 <div class="talk normal">
                     <div class="icon normal"></div>
                     <div class="info">
-                        <div class="time">16:25-16:45</div>
-                        <div class="title">Japanese Wikipedia Human Retrieval dataset</div>
-                        <div class="presenter">相良 美織 (バオバブ)</div>
+                        <div class="time">15:55-16:25</div>
+                        <div class="title">対話の楽しさの評価に向けた日本語応答生成ベンチマークの構築</div>
+                        <div class="presenter">水上 雅博 (NTT), 杉山 弘晃 (NTT)</div>
                     </div>
                     
                         <div class="btn_abstract" data-target=".abstract.talk_d-5">概要</div>
@@ -383,6 +383,24 @@
                 </div>
                 
                     <div class="abstract talk_d-5">
+                        近年のLLMの発展に伴い，さまざまな場面でLLMが活用されている．その活用先の一つに対話システムがある．LLMを用いた対話システムとしては，タスク対話やQAを行うAIアシスタントが主流であるが，対話を通して楽しさを提供する雑談対話システムの需要もある．一方で，LLMの評価において，ほとんどのベンチマークが客観性・事実性・簡潔性を評価しており，雑談対話の楽しさを評価する枠組みは知られていない．そこで，本研究では，対話の楽しさを評価するためのベンチマークを提案し，現在利用可能なLLMを評価した結果を報告する．
+                    </div>
+                <div class="talk normal">
+                    <div class="icon normal"></div>
+                    <div class="info">
+                        <div class="time">16:25-16:45</div>
+                        <div class="title">Japanese Wikipedia Human Retrieval dataset</div>
+                        <div class="presenter">相良 美織 (バオバブ)</div>
+                    </div>
+                    
+                        <div class="btn_abstract" data-target=".abstract.talk_d-6">概要</div>
+                    
+                    
+                        <div class="btn_material disabled">資料</div>
+                    
+                </div>
+                
+                    <div class="abstract talk_d-6">
                         2024年1月にBaobabでは引用付きQAのデータセットの作成・公開しました。検索対象をWikipediaに限定して、質問に基づいて人手の検索過程を記録しながら回答を生成したこのデータセットについて発表します。
                     </div>
                 </div></div>
@@ -399,49 +417,107 @@
                     <div class="info">
                         <div class="time">17:00-17:20</div>
                         <div class="title">『昭和・平成書き言葉コーパス』の公開と研究利用 ―著作権処理をしないコーパスの可能性―</div>
-                        <div class="presenter">髙橋 雄太 (明治大), 相田 太一 (都立大), 近藤 明日子 (東大), 間淵 洋子 (和洋女子大), 小木曽 智信 (国語研)</div>
+                        <div class="presenter">髙橋 雄太 (明治大), 相田 太一 (都立大), 近藤 明日子 (東大), 間淵 洋子 (和洋女子大), 小木曽 智信 (国語研)  💻 </div>
                     </div>
                     
-                        <div class="btn_abstract" data-target=".abstract.talk_d-1">概要</div>
+                        <div class="btn_abstract" data-target=".abstract.talk_e-1">概要</div>
                     
                     
                         <div class="btn_material disabled">資料</div>
                     
                 </div>
                 
-                    <div class="abstract talk_d-1">
+                    <div class="abstract talk_e-1">
                         本発表では2023年5月に公開した『昭和・平成書き言葉コーパス』（SHC）の設計と各種統計情報の公開とその利用例について説明する．SHCは1933年から2013年までの8年おきの11カ年分，約3340万語を収録した通時コーパスである．現代語のコーパスの公開のためには著作権処理が必要となり，このコストが大きな課題となっていたが，平成30年の著作権法の改正を受けて，SHCでは著作権処理を行わないコーパスの設計・公開方法をとった．具体的には，用例検索で表示される文脈長を短く制限することによって，テキストの思想や感情の享受を目的としない「軽微」な利用にとどめる工夫を行った．このほか，投書欄や俳句・短歌などの短い著作物には全文が閲覧できるため伏字処理を行った．SHCでは全文テキストを公開できない代わりに，語数表・語彙表，n-gram頻度形式とSVMlight形式の共起情報などの統計情報を各種公開しており，昭和平成期の通時的変化やレジスター差の計量的研究が期待される．
                     </div>
                 <div class="talk lt">
                     <div class="icon lt"></div>
                     <div class="info">
                         <div class="time">17:20-17:25</div>
-                        <div class="title">（ライトニングトーク1件予定）</div>
-                        <div class="presenter"></div>
+                        <div class="title">『分類語彙表』の多義語の意味増補のための『IPAL』用言例文への番号付与</div>
+                        <div class="presenter">柏野 和佳子 (国語研), 大阿久 志緒理 (所属なし)  💻 </div>
                     </div>
                     
-                        <div class="btn_abstract disabled">概要</div>
-                    
-                    
-                        <div class="btn_material disabled">資料</div>
-                    
-                </div>
-                <div class="talk normal">
-                    <div class="icon normal"></div>
-                    <div class="info">
-                        <div class="time">17:25-17:45</div>
-                        <div class="title">テキストに対する印象評定データベース</div>
-                        <div class="presenter">浅原 正幸 (国語研), 加藤 祥 (目白大)</div>
-                    </div>
-                    
-                        <div class="btn_abstract" data-target=".abstract.talk_d-3">概要</div>
+                        <div class="btn_abstract" data-target=".abstract.talk_e-2">概要</div>
                     
                     
                         <div class="btn_material disabled">資料</div>
                     
                 </div>
                 
-                    <div class="abstract talk_d-3">
+                    <div class="abstract talk_e-2">
+                        『分類語彙表 ―増補改訂版―』（国立国語研究所, 2004年）は、初版（約3万７千語）から増補版（約9万6千語）を作成する際に、基本的な多義語は多重分類されたが、意味に不足がみられる。そこで、情報処理振興事業協会（IPA）GSK配布版『計算機用日本語基本辞書IPAL―動詞・形容詞・名詞―』(2007年）に収録されている用言の例文に『分類語彙表』の番号を付与することで不足する意味を調査している。その結果と問題点を報告する。
+                    </div>
+                <div class="talk lt">
+                    <div class="icon lt"></div>
+                    <div class="info">
+                        <div class="time">17:25-17:30</div>
+                        <div class="title">分類AIの学習データ構築</div>
+                        <div class="presenter">佐藤 奈穂子 (株式会社リコーデジタル戦略部デジタル技術開発センター 言語AI開発室)</div>
+                    </div>
+                    
+                        <div class="btn_abstract" data-target=".abstract.talk_e-3">概要</div>
+                    
+                    
+                        <div class="btn_material disabled">資料</div>
+                    
+                </div>
+                
+                    <div class="abstract talk_e-3">
+                        弊社では2021年に「仕事のAI」シリーズを上梓し、BERTによるAI分類ツールの学習データを構築してきた。以来、トライアル顧客のデータの解析に取り組み、顧客の保有テキストデータは実に様々であり相応のクレンジング処理が必要であること、精度向上に効果的な分類のための学習データの開発には顧客データの深い解析が不可欠であることを認識している。弊社が当たってきた顧客のデータと、それらのクレンジング、顧客の目的に沿った分類カテゴリ獲得のためのデータ解析の一例、各カテゴリ毎の学習データ構築手法を紹介する。
+                    </div>
+                <div class="talk lt">
+                    <div class="icon lt"></div>
+                    <div class="info">
+                        <div class="time">17:30-17:35</div>
+                        <div class="title">症例テキストのアノテーションに用いるオントロジーの課題</div>
+                        <div class="presenter">土肥 栄祐 (国立研究開発法人国立精神神経医療研究センター神経研究所), 高月 照江 (情報システム研究機構ライフサイエンス統合データベースセンター), 建石 由佳 (国立研究開発法人科学技術推進機構NBDC事業推進部), 藤原 豊史 (情報システム研究機構ライフサイエンス統合データベースセンター), 山本 泰智 (情報システム研究機構ライフサイエンス統合データベースセンター)</div>
+                    </div>
+                    
+                        <div class="btn_abstract" data-target=".abstract.talk_e-4">概要</div>
+                    
+                    
+                        <div class="btn_material disabled">資料</div>
+                    
+                </div>
+                
+                    <div class="abstract talk_e-4">
+                        症例テキストへのアノテーションには、Human Phenotype Ontology（HPO）が用いられる。大規模言語モデルの使用にて、症状・所見の抽出は十分に可能となったが、HPOによるアノテーションは難しい。原因として、①用語がないのか？②アノテーション機能が不足しているのか？２つの可能性が考えられるが、HPO内に用語があるのか無いのかを確認することは困難である。本発表では、HPOを理解し易くするための取り組みについて述べる。
+                    </div>
+                <div class="talk lt">
+                    <div class="icon lt"></div>
+                    <div class="info">
+                        <div class="time">17:35-17:40</div>
+                        <div class="title">学術論文のPDF文書からのテキスト抽出における課題</div>
+                        <div class="presenter">福田 健人 (放送大学)</div>
+                    </div>
+                    
+                        <div class="btn_abstract" data-target=".abstract.talk_e-5">概要</div>
+                    
+                    
+                        <div class="btn_material disabled">資料</div>
+                    
+                </div>
+                
+                    <div class="abstract talk_e-5">
+                        近年のLLM開発では、Web上のHTML文書を広範にクロールした大規模コーパスを学習データとして用いることが多い。このような文書はテキスト抽出が容易であるものの、文章の品質には大きなばらつきがある。一方で、PDF文書は一般にテキスト抽出が困難であるが、学術論文・報告書・行政文書などの高品質なテキストデータの配布に用いられることが多い。本LTでは、特に日本語の学術論文のPDF文書を処理対象として、大規模言語モデルのための学習データを抽出する際の課題について紹介する。
+                    </div>
+                <div class="talk lt">
+                    <div class="icon lt"></div>
+                    <div class="info">
+                        <div class="time">17:40-17:45</div>
+                        <div class="title">テキストに対する印象評定データベース</div>
+                        <div class="presenter">浅原 正幸 (国語研), 加藤 祥 (目白大)</div>
+                    </div>
+                    
+                        <div class="btn_abstract" data-target=".abstract.talk_e-6">概要</div>
+                    
+                    
+                        <div class="btn_material disabled">資料</div>
+                    
+                </div>
+                
+                    <div class="abstract talk_e-6">
                         テキストを解析するにあたって、その言語構造のアノテーションが求められていた。一方、テキストを生成するにあたっては、その言語がどのように受容されるかの情報が求められる。言語の受容過程を記録するために、テキストを刺激とした眼球運動データや脳活動データの収集が進められている。しかしながら、これらのデータのみでは、なぜそのような眼球運動・脳活動に至ったかを直接的に説明することができない。本研究では、文脈中の単語・文節単位にその表現からどのような印象を受けるかのアンケート調査を行った。具体的には、自然さ (naturalness)・わかりやすさ (understandability)・古さ (obsoleteness)・新しさ (innovativeness)・比喩性 (figurativeness) の5つの観点について、0-5 の評定値を収集し、集計を行った。本発表では、このデータベースの可能性について示す。
                     </div>
                 </div></div>

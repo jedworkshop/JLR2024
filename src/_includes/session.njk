@@ -48,7 +48,7 @@
                         <div class="btn_abstract disabled">概要</div>
                     {% endif %}
                     {% if talk.material %}
-                        <a href="{{ talk.material | url }}" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
+                        <a href="{{ ('/materials/' + talk.material) | url }}" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>
                     {% else %}
                         <div class="btn_material disabled">資料</div>
                     {% endif %}

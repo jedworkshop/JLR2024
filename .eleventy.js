@@ -34,9 +34,12 @@ module.exports = function(eleventyConfig) {
     });
     eleventyConfig.addFilter("countSession", (obj) => {
         if ( obj.panelists || obj.talks.length == 0 ) { return ""; }
-        var count = {"lt": 0, "normal": 0};
+        var count = {"lt": 0, "normal": 0, "invite": 0};
         obj.talks.forEach((talk) => { count[talk.type] += 1; });
-        return "[" + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") + "]";
+        return "[" 
+        + ((count["invite"] > 0) ? `招待講演・` : "") 
+            + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") 
+            + "]";
     });
 
     return {

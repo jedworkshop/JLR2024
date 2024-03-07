@@ -1,5 +1,5 @@
-const fs = require("node:fs");
-const path = require("node:path");
+const fs = require("fs");
+const path = require("path");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -43,12 +43,15 @@ module.exports = function(eleventyConfig) {
             + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") 
             + "]";
     });
-
-    eleventyConfig.addNunjucksShortcode("pdf", function (sid) {
-        const dataFile = path.join("src/materials", `${sid}.pdf`);
+    eleventyConfig.addNunjucksShortcode("pdf", function (talk) {
+        const dataFile = path.join("src/materials", `${talk.id}.pdf`);
         if (fs.existsSync(dataFile)) {
-            return `<a href="../materials/${sid}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`;
-        } else { return `<div class="btn_material disabled">資料</div>`; }
+            return `<a href="../materials/${talk.id}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`;
+        } else {
+            if (talk.type == "invite") { return `<p>（準備中）</p>`; } else {
+                return `<div class="btn_material disabled">資料</div>`;
+            }
+        }
     });
 
     return {

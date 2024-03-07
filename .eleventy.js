@@ -1,3 +1,5 @@
+const fs = require("node:fs");
+const path = require("node:path");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -40,6 +42,13 @@ module.exports = function(eleventyConfig) {
         + ((count["invite"] > 0) ? `招待講演・` : "") 
             + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") 
             + "]";
+    });
+
+    eleventyConfig.addNunjucksShortcode("pdf", function (sid) {
+        const dataFile = path.join("src/materials", `${sid}.pdf`);
+        if (fs.existsSync(dataFile)) {
+            return `<a href="../materials/${sid}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`;
+        } else { return `<div class="btn_material disabled">資料</div>`; }
     });
 
     return {

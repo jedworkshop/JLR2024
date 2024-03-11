@@ -1,3 +1,5 @@
+const fs = require("fs");
+const path = require("path");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
@@ -34,9 +36,22 @@ module.exports = function(eleventyConfig) {
     });
     eleventyConfig.addFilter("countSession", (obj) => {
         if ( obj.panelists || obj.talks.length == 0 ) { return ""; }
-        var count = {"lt": 0, "normal": 0};
+        var count = {"lt": 0, "normal": 0, "invite": 0};
         obj.talks.forEach((talk) => { count[talk.type] += 1; });
-        return "[" + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") + "]";
+        return "[" 
+        + ((count["invite"] > 0) ? `招待講演・` : "") 
+            + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") 
+            + "]";
+    });
+    eleventyConfig.addNunjucksShortcode("pdf", function (talk) {
+        const dataFile = path.join("src/materials", `${talk.id}.pdf`);
+        if (fs.existsSync(dataFile)) {
+            return `<a href="../materials/${talk.id}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`;
+        } else {
+            if (talk.type == "invite") { return `<p>（準備中）</p>`; } else {
+                return `<div class="btn_material disabled">資料</div>`;
+            }
+        }
     });
 
     return {

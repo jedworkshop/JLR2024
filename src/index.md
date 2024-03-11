@@ -14,7 +14,7 @@ index: true
   <img src="https://jedworkshop.github.io/JLR2024/img/icon.png" style="width:120px;">  
 </td>
 </tr><tr><td colspan="2">
-会場：神戸国際会議場＋オンライン中継のハイブリッド開催  
+会場：神戸国際会議場（D会場(501) + サテライト会場: E会場(502)）＋オンライン中継のハイブリッド開催  
 </td></tr></table>
 
 <div class="twitter_info">
@@ -24,7 +24,8 @@ index: true
 ## 新着情報
 
 - 2023/11/18 JLR2024公式Webサイトをオープンしました。
-- 2024/2/28 本プログラム公開
+- 2024/02/28 本プログラム公開
+- 2024/03/11 発表資料・プログラム最終版公開
 
 ## 趣旨
 

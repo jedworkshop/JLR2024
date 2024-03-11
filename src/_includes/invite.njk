@@ -26,9 +26,7 @@
 
 <div class="keynote_headning">講演資料</div>
 
-<p>{%- if talk.material.url -%}<a href="{{ talk.material.url }}">{%- endif -%}
-{{ talk.material.name }}
-{%- if talk.material.url -%}</a>{%- endif -%}</p>
+{% pdf talk %}
 
 <div class="keynote_headning">略歴</div>
 <p>{{ talk.biography }}</p>

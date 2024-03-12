@@ -43,10 +43,12 @@ module.exports = function(eleventyConfig) {
             + `一般発表${count["normal"]}件` + ((count["lt"] > 0) ? `・LT${count["lt"]}件` : "") 
             + "]";
     });
-    eleventyConfig.addNunjucksShortcode("pdf", function (talk) {
+    eleventyConfig.addNunjucksShortcode("pdf", function (talk, index=false) {
         const dataFile = path.join("src/materials", `${talk.id}.pdf`);
         if (fs.existsSync(dataFile)) {
-            return `<a href="../materials/${talk.id}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`;
+            if (index) { return `<a href="materials/${talk.id}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`; } else {
+                return `<a href="../materials/${talk.id}.pdf" target="_blank" rel="noreferrer"><div class="btn_material">資料</div></a>`;
+            }
         } else {
             if (talk.type == "invite") { return `<p>（準備中）</p>`; } else {
                 return `<div class="btn_material disabled">資料</div>`;

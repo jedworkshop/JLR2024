@@ -17,6 +17,10 @@ Source of the "NLP2024 Workshop on Japanese Language Resources" website.
   - Push to the `main` branch of this repository
   - => Files under `docs/` served as https://jedworkshop.github.io/JLR2024 by GitHub Pages
 
+## GitHub Actions
+
+`Actions` -> `Workflows` "Deploy eleventy with GitHub Pages" -> `Run workflow`
+で`src`内ファイルを`docs`に変換しつつ、GitHub Pagesを更新する。
 
 ## Dependencies
 
